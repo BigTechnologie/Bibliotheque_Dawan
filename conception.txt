@@ -1,0 +1,24 @@
+TP:
+
+1- Créer une page d'accueil contenant un header et un footer => le header doit contenir une nav
+
+- Accès libre: page d'accueil, liste des livres disponibles, detail sur un livre
+- Accès controller: Ajouter, supprimer, modifier
+|
+|-> si on est connecté, alors on affiche la page admin
+|
+|->si on est pas connecté, on est redirigé vers la page de connection pour effectuer un rôle admin
+   |-> On n'a un formulaire de connection
+   |->On se connecte avec un identifiant et un mot de passe
+   |
+   |-> si connection reussi, redirection vers "livre/ajouter"
+        |-> On peut: ajouter, supprimer, modifier un livre
+
+2- sql
+    - On met un systeme en place permettant de créer notre base de données si elle n'existe pas
+    - On met en place le même systeme pour les tables       
+
+3- astuce
+       -> enregister (en session) l'adresse de la page initialement demandée
+       -> chercher dans $_SESSION la page sur laquelle on se trouve        
+
